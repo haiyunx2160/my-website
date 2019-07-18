@@ -1,68 +1,86 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## ![]([https://github.com/haiyunx2160/my-website](https://github.com/haiyunx2160/my-website))My Website
 
-In the project directory, you can run:
+![](<https://img.shields.io/badge/FrontEnd-React-brightgreen.svg>)![](<https://img.shields.io/badge/DataBase-Firebase-blue.svg>)![](<https://img.shields.io/badge/Datastore-Redux-orange.svg>)![](<https://img.shields.io/badge/CSS-Bootstrap-yellow.svg>)
 
-### `npm start`
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
 
-### `npm test`
+> This project version as private project was originally contrtolled by GitLab. Now it becomes open-source repository in GitHub. It has already been deployed at [Amazon S3]([http://ng-aaronxiao.s3-website-us-east-1.amazonaws.com/](http://ng-aaronxiao.s3-website-us-east-1.amazonaws.com/))
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+**My website project** is dedicated to be a process to put my React, Redux and Firebase knowledge into practice. 
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+*It provides main **Features** below:*
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Firebase Auth to sign in/out/up users
+- Making posts
+- Delete Posts
+- Fetching data and display from Firebase
+- Sending message to website owner
 
-### `npm run eject`
+Here is <u>*the client side*</u>, which is built by MERN stack, and ***built with***
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- [React](https://reactjs.org/docs/getting-started.html)  ^16.7.0
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- *[react-redux](https://react-redux.js.org/introduction/quick-start)* ^6.0.0
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+- [axios](https://github.com/axios/axios)  ^0.18.0
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- [bootstrap](https://react-bootstrap.github.io/getting-started/introduction) ^4.3.1
 
-## Learn More
+- *[Firebase](https://socket.io/docs/)* ^6.3.0
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+  More *dependencies* is seen at the Package.JSON file
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+### Getting Started
 
-### Analyzing the Bundle Size
+------
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+##### Prerequisites
 
-### Making a Progressive Web App
+The project runs in [Nodejs](<https://nodejs.org/en/>) environment. it requires:
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+-  [Nodejs](https://nodejs.org/en/)  v 10.0 or later
+-  [npm](https://www.npmjs.com/)  v 6.0 or later
+##### Installing
 
-### Advanced Configuration
+> Note: The `client` project needs to work with [travel website server](https://github.com/Xiong1028/travel_website_server) project, make sure the [travel website server](https://github.com/Xiong1028/travel_website_server) and `MongoDB` service are running.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+```linux
+$ git clone git@github.com:haiyunx2160/my-website.git
+$ cd my-website
+$ npm install
+$ npm start
+```
 
-### Deployment
+the development mode will be running at `localhost:3000`
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+##### Building
 
-### `npm run build` fails to minify
+```linux
+$ npm run build
+```
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+explorations Using the above command, it will create a build directory.
+
+![](https://github.com/Xiong1028/pictures/blob/master/build.png?raw=true)
+
+Move the whole `build` directory to the  [S3](https://github.com/Xiong1028/travel_website_server) bucket. 
+
+
+
+### Demo
+
+![MainPage](https://github.com/haiyunx2160/myfiles/blob/master/Demo%20gif/my-website.gif?raw=true)
+
+
+
+### Licensing
+
+------
+
+This project is under `GNU/GPL` license.
